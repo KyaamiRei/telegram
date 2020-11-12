@@ -17,12 +17,6 @@ def welcome(message):
 #     bot.send_message(message.chat.id, "Можешь подождать {0.first_name}?. \nПлииииз♥".format(message.from_user), 
 #     parse_mode='html')
 
-    # rnd = random.randint(0,3)
-
-    # pic = open(f'static/qq ({rnd}).jpg', 'rb')
-    # bot.send_message(message.chat.id, "Но для тебя у меня есть вот это!, -> " + str(rnd))
-    # bot.send_photo(message.chat.id, pic)
-
 @bot.message_handler(commands=['giveList'])
 def fileCount(message):
     fileList = os.listdir(path="static")
